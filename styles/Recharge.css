@@ -1,0 +1,484 @@
+
+/* Estilos gerais da recarga */
+#recarga-container {
+    font-family: 'Poppins', sans-serif;
+    width: 992px; 
+    background-color: #91c4ff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgb(0 0 0 / 32%);
+    position: relative;
+    top: 184px;
+    margin-left: 200px;
+    height: 640px;
+    z-index: 10; /* Definindo um z-index baixo para a tela de recarga */
+}
+
+#recarga-container .recarga-header {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin-left: 223px;
+}
+
+#recarga-container .recarga-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#recarga-container .recarga-instructions {
+    background-color: #002E62;
+    color: white;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
+    height: 640px;
+    width: 293px;
+    margin-top: -106px;
+    box-shadow: 10px 0px 10px 0px #0000007a;
+}
+
+#recarga-container .recarga-instructions h3 {
+    margin-top: 83px;
+    text-align: center;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+}
+
+#recarga-container h2.Vale {
+    padding-top: 30px;
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: 67px;
+    color: #001a38;
+}
+
+#recarga-container label.texto {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: -43px;
+}
+
+label.pagamento {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: -17px;
+}
+
+span.aprovacao-pix {
+    font-size: 12px;
+    color: #767676;
+    margin-top: 34px;
+    margin-left: -23px;
+}
+
+span.aprovacao-debito {
+    font-size: 12px;
+    color: #767676;
+    margin-top: 34px;
+    margin-left: -143px;
+}
+
+span.aprovacao-credito {
+    font-size: 12px;
+    color: #767676;
+    margin-top: 34px;
+    margin-left: -151px;
+}
+
+span.aprovacao-boleto {
+    font-size: 12px;
+    color: #767676;
+    margin-top: 34px;
+    margin-left: -54px;
+}
+
+#recarga-container .custom-select-container {
+    margin: 20px;
+    max-width: 350px;
+}
+
+#recarga-container .custom-select {
+    max-width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-left: 134px;
+}
+
+#recarga-container .select-btn {
+    display: flex; /* Alinhar itens horizontalmente */
+    align-items: center; /* Centralizar verticalmente os itens dentro do botão */
+    justify-content: space-between; /* Espaçar itens igualmente */
+    width: 82%;
+    height: 53px;
+    max-width: 350px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px; 
+    margin-left: 167px;
+    z-index: 10; /* Definindo um z-index para o botão de seleção */
+}
+
+#recarga-container .select-dropdown {
+    display: none;
+    background-color: white;
+    border: 1px solid #cafaff;
+    border-radius: 20px;
+    width: 228px; 
+    margin-left: 226px;
+    margin-top: 5px;
+    box-shadow: 0px 4px 10px #0000005e;
+    z-index: 10; /* Definindo um z-index para o dropdown */
+}
+
+#recarga-container .select-dropdown.show {
+    display: block;
+}
+
+#recarga-container .select-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona a transição suave */
+    height: 50px;
+}
+
+#recarga-container .select-option:hover {
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    color: rgb(0, 16, 88);
+}
+
+.select-option i {
+    margin-right: 8px; /* Ajuste o valor conforme necessário */
+}
+
+#recarga-container p.total {
+    background-color: white;
+    border-radius: 10px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#recarga-container span.texto-total {
+    color: rgb(117 117 117);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#recarga-container .recarga-highlight {
+    background-color: #00A52F;
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+#recarga-container .passagem-highlight {
+    background-color: #00A52F;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    margin: auto;
+    margin-top: 270px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#recarga-container .recarga-form {
+    flex: 1.5;
+    padding: 20px;
+    margin-top: -22;
+}
+
+#recarga-container .input-group-passagem {
+    background-color: white;
+    border-radius: 10px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44%;
+    margin: auto;
+    margin-top: -5px;
+}
+
+#recarga-container input#numero-passagens {
+    width: 98%;
+    text-align: center;
+    padding-left: 19px;
+    border-radius: 10px;
+    height: 53px;
+    border: none;
+    font-weight: 500;
+}
+
+#recarga-container #total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button.btn-pagamento {
+    margin-left: 204px;
+    margin-top: 110px;
+    width: 11%;
+    border-radius: 8px;
+    position: fixed;
+    z-index: 10; /* Definindo um z-index para o botão de pagamento */
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Certifique-se de que o overlay está sobre outros elementos */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+div.modal-content{
+    margin-left: 40px;
+    margin-top: 260px;
+    width: 582px;
+    height: 500px;
+    background-color: #020016;
+}
+
+p.description{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+.modal {
+    z-index: 9999; /* Valor padrão do Bootstrap, pode ajustar se necessário */
+}
+
+
+button.btn.btn-secondary {
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none; 
+    /* background: none; */
+    transition: color 0.3s ease, transform 0.3s ease;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+
+button.btn.btn-secondary:hover {
+    color: #ff0000;
+    transform: scale(1.3);
+}
+
+i.fas.fa-times::before{
+    top: -10px;
+    right: 6px;
+    position: relative;
+}
+
+i#cvvInfoIcon.fas.fa-question-circle::before{
+    top: 0px;
+    right: 0px;
+    position: relative;
+    color: #878787;
+}
+
+i#cvvInfoIcon.fas.fa-question-circle{
+    top: -69px;
+    right: -35px;
+    position: relative;
+    color: #878787;
+}
+
+/* Estilos personalizados para o tooltip */
+.tooltip-inner {
+    background-color: #00799e !important; /* Cor de fundo do tooltip */
+    color: #fff !important; /* Cor do texto */
+    font-size: 0.9rem !important; /* Tamanho da fonte */
+    padding: 0.5rem !important; /* Espaçamento interno */
+    border-radius: 8px !important; /* Borda arredondada */
+}
+
+.tooltip-arrow {
+    color: #00799e !important; /* Cor da seta do tooltip */
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #00799e !important; /* Cor da seta na posição superior */
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #00799e !important; /* Cor da seta na posição inferior */
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #00799e !important; /* Cor da seta na posição direita */
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #00799e !important; /* Cor da seta na posição esquerda */
+}
+
+
+/* Conteúdo do overlay */
+.overlay-content {
+    background: #04002c;    
+    font-family: 'Poppins';
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid white;
+    /* width: 90%; */
+    max-width: 582px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: baseline; */
+    margin-left: 750px;
+    /* margin: auto; */
+    /* margin-left: 54px; */
+    margin-top: 250px;
+}
+
+h3.registro-cartao{
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 44px;
+}
+
+label.numero{
+    color: white;
+    font-weight: lighter;
+}
+
+label.nome{
+    color: white;
+    font-weight: lighter;
+}
+
+label.data{
+    color: white;
+    font-weight: lighter;
+}
+
+label.cvv{
+    color: white;
+    font-weight: lighter;
+}
+
+/* Estilos para o formulário de cadastro de cartão */
+.config-card-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Se sobrepõe à tela de recarga */
+}
+
+.config-card-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.config-card-container .form-group {
+    margin-bottom: 15px;
+}
+
+.config-card-container .form-group label {
+    margin-bottom: 5px;
+}
+
+.config-card-container .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.config-card-container .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Definindo a fonte para todos os inputs do formulário de cartão */
+#cardForm input[type="text"],
+#cardForm input[type="number"],
+#cardForm input[type="password"] {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #ffffff;
+    /* border: 1px solid #6c6cff; */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+}
+
+/* Especificações adicionais, se necessário */
+#cardNumber {
+    letter-spacing: 2px; /* Para o número do cartão */
+}
+
+button.btn.btn-salvar{
+    width: 147px;
+    background-color: blue;
+}
+.btn-salvar:hover{
+    background-color: blue;
+}
+
+button#addCardBtn.btn.btn-primary{
+    margin-top: 86px;
+    display: none;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Espaçamento superior para separar os botões do restante do formulário */
+}
+
+.button-container .btn {
+    flex: 1; /* Isso faz com que ambos os botões tenham a mesma largura */
+    max-width: 150px; /* Limita a largura máxima dos botões, você pode ajustar conforme necessário */
+}
+
+

@@ -1,0 +1,180 @@
+.cartao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cartao {
+    width: 807px;
+    height: 462px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid;
+    position: relative;
+    top: 40px;
+    left: 116px;
+}
+
+.cartao-header {
+    margin: 25px;
+}
+
+.qrcode {
+    width: 150px;
+    height: 150px;
+}
+
+.onibus-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px; /* Tamanho da imagem */
+    height: auto;
+    margin: 25px; /* Margem para afastar do topo e da direita */
+}
+
+.cartao-body {
+    margin-left: 25px;
+}
+
+.cartao-body p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cartao-body .status {
+    background-color: #28a745;
+    color: white;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+
+.cartao:before {
+    content: "";
+    position: absolute;
+    top: 323px;
+    left: 487px;
+    border-right: 318px solid transparent;
+    border-bottom: 70px solid #6c757d;
+    background-color: #6c757d;
+}
+
+.cartao:after {
+    content: "";
+    position: absolute;
+    bottom: 26px;
+    right: 0px;
+    /* border-radius: 0px 0px 8px 0px; */
+    border-right: 387px solid transparent;
+    border-top: 86px solid #162399;
+    /* background: linear-gradient(to right, #162399, #6776FF); */
+    background-color: #162399;
+}
+
+
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header.top-home {
+    color: white;
+    width: 100%;
+    background-color: #525AFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 10px 3px #00000057;
+    cursor: pointer;
+    z-index: 99;
+
+    h1 {
+        font-size: 1.1em;
+        text-transform: uppercase;
+    }
+}
+
+.search-bar input {
+    font-family: 'Poppins', sans-serif;;
+    background-color: transparent;
+    border: none;
+    width: 150px;
+}
+
+.search-bar input::placeholder {
+    color: white;
+    opacity: 1; /* Mantém a opacidade do texto branco visível */
+}
+
+.search-bar input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.search-bar input::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+nav .divider {
+    border-bottom: 1px solid #ffffffa3;
+    margin: -42px 20px 10px;
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    background-color: #2D2AAC;
+    color: white;
+
+    nav {
+        width: 100%;
+
+        .opcao {
+            margin: 50px 0px;
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+            transition: .3s;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            transition: .4s;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .opcao.ativo {
+            background-color: #6A66FF;
+        }
+
+        .opcao:hover {
+            background-color: #6A66FF;
+        }
+    }
+}

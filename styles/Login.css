@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #010e3bce;
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px; /* Ajuste opcional para largura máxima */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #ffffff;
+}
+
+.avatar {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%; /* Ajustado para 100% */
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 15px 10px 45px;
+    background: rgba(255, 255, 255, 0.781);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.input-group #toggleSenha {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    left: 320px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    width: 50%; /* Ajustado para 100% */
+    padding: 10px;
+    background-color: #04002c;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+button:hover {
+    background-color: #0084ff;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.options a {
+    color: #0099ff;
+    font-size: 14px;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.back-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.back-button i {
+    margin-right: 8px;
+    font-size: 24px;
+}

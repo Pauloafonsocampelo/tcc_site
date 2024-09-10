@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+.wrapper {
+    background-image: url('../src/Assets/viajar-de-onibus.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    width: 95vw;
+    height: 625px;
+    position: relative;
+}
+
+.login, .register {
+    width: 100%;
+    /* padding: 40px; */
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+
+.login {
+    background-color: #010e3bd8;
+    color: white;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 460px; */
+    width: 50%;
+    gap: 78px;
+    padding: 10px 70px;
+    height: 100%;
+    left: -14.5px;
+}
+
+.login h1 {
+    font-size: 32px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+
+}
+
+.login .bottom {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login p {
+    /* margin: 20px 0; */
+    /* text-align: left; */
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+.login button {
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* top: 350px; */
+}
+
+.login a {
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.login .esqueci{
+    color: #0084ff;
+    font-size: 14px;
+}
+
+.register {
+    color: #ffffff;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 10px;
+}
+
+.register h1 {
+    font-size: 45px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.register p {
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.alert-danger {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+}
+
+.register button {
+    width: 32%;
+    box-shadow: 1px 2px 5px #00000059;
+    height: 50px;
+    background-color: #010e3b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.register button:hover{
+    background-color: #00386d;
+    transition: background-color 0.3s;
+}
+
+.senhas-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-control-sm, .input-group-sm>.form-control, .input-group-sm>.input-group-append>.btn, .input-group-sm>.input-group-append>.input-group-text, .input-group-sm>.input-group-prepend>.btn, .input-group-sm>.input-group-prepend>.input-group-text {
+    padding: .50rem 19px !important;
+    font-size: .875rem !important;
+    line-height: 1.5 !important;
+}
+
+.input-group-text {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    padding: .375rem .75rem !important;
+    margin-bottom: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    background-color: #a1a1a1c4 !important;
+    /* border: 1px solid #ced4da; */
+}
