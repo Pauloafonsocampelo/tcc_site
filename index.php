@@ -4,6 +4,7 @@ session_start();
 include "utils/Page.php";
 include "utils/Sessao.php";
 include "Controllers/UserController.php";
+include "Controllers/CardController.php";
 
 
 $server = str_replace("tcc_site/", "", strtolower($_SERVER["REQUEST_URI"]));

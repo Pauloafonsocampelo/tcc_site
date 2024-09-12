@@ -95,6 +95,7 @@ $(document).ready(() => {
         // Abrir overlay de registro de cartão
         $('#addCardBtn').click(function() {
             $('#cardOverlay').fadeIn();
+            $("#cardOverlay").css("display", "flex");
         });
 
         // Fechar overlay
