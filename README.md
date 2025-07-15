@@ -43,7 +43,7 @@ Esse projeto propõe **agilidade e autonomia** para o usuário do transporte urb
 ## 👨‍💻 Autor
 
 **Paulo Afonso** 
-Contribuição - **Silvio Cesar**
+- Contribuição - **Silvio Cesar**.
 TCC apresentado como parte da conclusão do curso de Análise e Desenvolvimento de Sistemas – Instituto Federal Farroupilha.  
 Desenvolvido com dedicação, propósito e vontade de fazer diferença na mobilidade urbana.
 
