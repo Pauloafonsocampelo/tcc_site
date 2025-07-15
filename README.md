@@ -34,12 +34,6 @@ Criar uma plataforma acessível que:
 
 ---
 
-## 📸 Interface (Screenshots)
-
-*Adicione imagens das telas aqui, se quiser mostrar o sistema em ação.*
-
----
-
 ## 📚 Conclusão
 
 Esse projeto propõe **agilidade e autonomia** para o usuário do transporte urbano, reduzindo filas físicas de recarga e otimizando a experiência do passageiro. Um passo rumo à digitalização do transporte público.
